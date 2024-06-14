@@ -1,11 +1,11 @@
 Artis:
 A001
 John
-6
+7
 Album:
 ALB001
 Greatest Hits
-12
+14
 Lagu:
 L001
 Hit Song 1
@@ -19,11 +19,11 @@ Rock
 Artis:
 A002
 Jane Smith
-6
+7
 Album:
 ALB002
 Debut Album
-6
+7
 Lagu:
 L003
 First Song
@@ -32,11 +32,11 @@ Jazz
 Artis:
 AR001
 JIKRI
-2
+4
 Album:
 AL001
 RAP
-1886608501
+1886608502
 Lagu:
 LA001
 BONCIKADAP
@@ -46,3 +46,7 @@ Album:
 AL001
 JOROK
 0
+Artis:
+ART01
+dzikri
+1632373298

@@ -8,6 +8,7 @@
 #include "Lagu.h"
 #include "Album.h"
 #include "Playlist.h"
+#include "Fileoperation.h"
 using namespace std;
 
 struct Artis {
@@ -18,8 +19,18 @@ struct Artis {
     Artis *nextArtis;
 };
 
+struct LaguPlaylist;
+struct Album;
+struct Artis;
+struct playlist;
+
+typedef LaguPlaylist *ptrLaguPlaylist;
+typedef Lagu *ptrLagu;
+typedef Album *ptrAlbum;
 typedef Artis *ptrArtis;
+typedef playlist *ptrPlaylist;
 typedef ptrArtis first;
+typedef ptrPlaylist firstPlaylist;
 
 void createDataList(first &list); //membuat list baru untuk artis taro di header artis
 void createArtis(ptrArtis &newArtis); //membuat node artis baru taro di header artis

@@ -8,7 +8,9 @@
 #include "Lagu.h"
 #include "Artis.h"
 #include "Playlist.h"
+#include "Fileoperation.h"
 using namespace std;
+
 
 struct LaguPlaylist
 {
@@ -35,7 +37,15 @@ struct playlist
     Queue laguQueue;
 };
 
+struct Lagu;
+struct Album;
+struct Artis;
+
+typedef Lagu *ptrLagu;
+typedef Album *ptrAlbum;
+typedef Artis *ptrArtis;
 typedef playlist *ptrPlaylist;
+typedef ptrArtis first;
 typedef ptrPlaylist firstPlaylist;
 
 void createPlayList(firstPlaylist &headPlaylist); //membuat playlist Baru taro di header playlist

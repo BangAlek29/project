@@ -41,7 +41,6 @@ struct LaguPlaylist
     LaguPlaylist *prevLagu;
 };
 
-typedef LaguPlaylist *ptrLaguPlaylist;
 
 struct Queue
 {
@@ -57,6 +56,7 @@ struct playlist
     Queue laguQueue;
 };
 
+typedef LaguPlaylist *ptrLaguPlaylist;
 typedef Lagu *ptrLagu;
 typedef Album *ptrAlbum;
 typedef Artis *ptrArtis;
