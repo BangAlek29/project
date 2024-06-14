@@ -2,14 +2,14 @@
 #include <iomanip>
 #include <string>
 #include <fstream>
-#include "Lagu.h"
-#include "Artis.h"
-#include "Playlist.h"
-#include "Album.h"
-#include "Fileoperation.h"
+#include "../include/Album.h"
+#include "../include/Lagu.h"
+#include "../include/Artis.h"
+#include "../include/Playlist.h"
+#include "../include/Fileoperation.h"
 using namespace std;
 
-void tabel() //untuk tabel menu pada awal program dijalankan 
+void tabel() // untuk tabel menu pada awal program dijalankan
 {
     for (int i = 0; i < 20; i++)
     {

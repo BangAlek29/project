@@ -1,4 +1,4 @@
-#include "Artis.h"
+#include "../include/Artis.h"
 
 void createDataList(first &list) // membuat list baru untuk artis taro di header artis
 {

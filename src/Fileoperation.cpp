@@ -1,13 +1,21 @@
-#include "Fileoperation.h"
+#include "../include/Fileoperation.h"
 
 void loadplaylist()
 {
     Queue q;
-    ifstream file("playlist.txt");
+    ifstream file("Data/playlist.txt");
     if (!file.is_open())
     {
-        cout << "File tidak ditemukan" << endl;
-        return;
+        cout << "File tidak ditemukan. Membuat file baru..." << endl;
+        ofstream createFile("Data/playlist.txt"); // Membuat file baru
+        createFile.close();
+        file.open("Data/playlist.txt"); // Membuka file yang baru dibuat
+        if (!file.is_open())
+        {
+            cout << "Gagal membuat file baru." << endl;
+            return;
+        }
+    
     }
     string line;
 
@@ -30,7 +38,7 @@ void loadplaylist()
 
 void save(ptrArtis head)
 {
-    ofstream file("data.txt");
+    ofstream file("Data/data.txt");
     if (!file.is_open())
     {
         cout << "File tidak ditemukan" << endl;
@@ -72,11 +80,18 @@ void save(ptrArtis head)
 }
 void load(ptrArtis &pBantu)
 {
-    ifstream file("data.txt");
+    ifstream file("Data/data.txt");
     if (!file.is_open())
     {
-        cout << "File tidak ditemukan" << endl;
-        return;
+        cout << "File tidak ditemukan. Membuat file baru..." << endl;
+        ofstream createFile("Data/data.txt"); // Membuat file baru
+        createFile.close();
+        file.open("Data/data.txt"); // Membuka file yang baru dibuat
+        if (!file.is_open())
+        {
+            cout << "Gagal membuat file baru." << endl;
+            return;
+        }
     }
     string line;
     pBantu = nullptr;

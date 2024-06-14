@@ -1,10 +1,6 @@
 #ifndef PLAYLIST_H
 #define PLAYLIST_H
 
-#include <iostream>
-#include <iomanip>
-#include <string>
-#include <fstream>
 #include "Lagu.h"
 #include "Artis.h"
 #include "Playlist.h"

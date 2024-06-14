@@ -1,4 +1,4 @@
-#include "Lagu.h"
+#include "../include/Lagu.h"
 
 void createLagu(ptrLagu &newLagu) // membuat node lagu baru taro di header lagu
 {

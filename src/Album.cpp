@@ -1,4 +1,4 @@
-#include "Album.h"
+#include "../include/Album.h"
 
 void createAlbum(ptrAlbum &newAlbum) // membuat node album baru taro di header album
 {
